@@ -1,0 +1,217 @@
+:root {
+  --paper: #fbfaf7;
+  --ink: #202428;
+  --muted: #626a70;
+  --link: #155d88;
+  --line: #d9d7d0;
+  --max: 800px;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+main,
+footer {
+  width: min(100% - 3rem, var(--max));
+  margin-inline: auto;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 10;
+  transform: translateY(-180%);
+  padding: 0.45rem 0.7rem;
+  background: var(--ink);
+  color: white;
+}
+
+.skip-link:focus { transform: translateY(0); }
+
+.profile {
+  padding: 4.5rem 0 2.75rem;
+  border-bottom: 1px solid var(--ink);
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  align-items: start;
+  gap: 2rem;
+}
+
+.portrait {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 2px;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.profile h1 {
+  margin: 0;
+  font-size: clamp(2.35rem, 7vw, 3.25rem);
+  font-weight: 680;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+.position {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.45;
+}
+
+.profile-copy > p:not(.position, .meta) {
+  max-width: 740px;
+  margin: 1.55rem 0 0;
+}
+
+.meta,
+.note {
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.meta { margin: 0.8rem 0 0; }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.2rem;
+  margin-top: 1.15rem;
+}
+
+.links a { font-weight: 600; }
+
+section {
+  padding: 2.15rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+h2 {
+  margin: 0 0 1.15rem;
+  font-size: 0.98rem;
+  font-weight: 720;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 680;
+  line-height: 1.45;
+}
+
+p { margin: 0; }
+p + p { margin-top: 0.45rem; }
+
+.dated-list,
+.presentation-list,
+.publication-list { margin: 0; }
+
+.dated-list {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0;
+  list-style: none;
+}
+
+.dated-list li {
+  display: grid;
+  grid-template-columns: 7.2rem minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.dated-list time {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.entry-list {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.entry-list article p { margin-top: 0.28rem; }
+.education-list { gap: 1.05rem; }
+
+.compact-list {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.compact-list li + li { margin-top: 0.2rem; }
+
+.publication-list,
+.presentation-list { padding-left: 1.25rem; }
+
+.publication-list li,
+.presentation-list li { padding-left: 0.25rem; }
+
+.presentation-list li + li { margin-top: 0.75rem; }
+
+footer {
+  padding: 1.5rem 0 3rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  body { font-size: 15.5px; }
+  main, footer { width: min(100% - 2rem, var(--max)); }
+  .profile { padding-top: 2.75rem; }
+  .profile-layout { grid-template-columns: 112px minmax(0, 1fr); gap: 1.25rem; }
+  .portrait { width: 112px; height: 112px; }
+  .profile-copy > p:not(.position, .meta) { grid-column: 1 / -1; }
+  .dated-list li { display: block; }
+  .dated-list time { display: block; margin-bottom: 0.08rem; }
+}
+
+@media (max-width: 430px) {
+  .profile-layout { display: block; }
+  .portrait { margin-bottom: 1.3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@media print {
+  body { background: white; color: black; font-size: 11pt; }
+  main, footer { width: 100%; }
+  .profile { padding-top: 0; }
+  section { break-inside: avoid; }
+  footer { display: none; }
+}
