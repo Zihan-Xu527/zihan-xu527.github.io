@@ -92,7 +92,13 @@ a:focus-visible {
   line-height: 1.45;
 }
 
-.profile-copy > p:not(.position, .meta) {
+.seeking {
+  margin: 0.85rem 0 0;
+  color: var(--accent);
+  font-weight: 650;
+}
+
+.profile-copy > p:not(.position, .seeking, .meta) {
   max-width: 740px;
   margin: 1.55rem 0 0;
 }
@@ -194,7 +200,7 @@ footer {
   .profile { padding-top: 2.75rem; }
   .profile-layout { grid-template-columns: 112px minmax(0, 1fr); gap: 1.25rem; }
   .portrait { width: 112px; height: 112px; }
-  .profile-copy > p:not(.position, .meta) { grid-column: 1 / -1; }
+  .profile-copy > p:not(.position, .seeking, .meta) { grid-column: 1 / -1; }
   .dated-list li { display: block; }
   .dated-list time { display: block; margin-bottom: 0.08rem; }
 }
