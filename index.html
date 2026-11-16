@@ -35,19 +35,20 @@
             <p class="position">Ph.D. Candidate in Applied Mathematics<br>University of California, Merced</p>
             <p class="seeking">Seeking postdoctoral or research scientist opportunities in mathematical oncology.</p>
             <p>
-              I develop the statistics-informed neural network (SINN), a machine-learning-based
-              surrogate model for stochastic dynamical systems. SINN learns and generates stochastic
-              trajectories by matching the statistical properties of sample data. My broader interests
-              include scientific machine learning, uncertainty quantification, computational biology,
-              and quantitative oncology.
+              I develop Statistics-Informed Neural Networks (SINNs), recurrent neural-network
+              surrogates that learn and generate stochastic time trajectories by matching ensemble
+              statistics, without requiring trajectory-wise correspondence. My research interests
+              span stochastic modeling, scientific machine learning, data-driven surrogate modeling,
+              multiscale and hybrid simulation, and uncertainty quantification, with growing interests
+              in bioinformatics and mathematical oncology.
             </p>
-            <p class="meta">Advisor: <a href="https://sites.ucmerced.edu/ckim103/">Prof. Changho Kim</a> &middot; Expected graduation: Spring 2027</p>
+            <p class="meta">Advisor: <a href="https://sites.ucmerced.edu/ckim103/">Prof. Changho Kim</a> &middot; Expected graduation: May 2027</p>
             <nav class="links" aria-label="Profile links">
               <a href="mailto:zxu64@ucmerced.edu">Email</a>
               <a href="https://github.com/Zihan-Xu527">GitHub</a>
               <a href="https://orcid.org/0009-0004-4022-599X">ORCID</a>
               <a href="https://appliedmath.ucmerced.edu/content/zihan-xu">UC Merced profile</a>
-              <a href="assets/Zihan_Xu_CV.pdf">CV</a>
+              <a href="assets/Zihan_Xu_CV.pdf">CV (PDF)</a>
             </nav>
           </div>
         </div>
@@ -56,10 +57,12 @@
       <section aria-labelledby="news-heading">
         <h2 id="news-heading">News</h2>
         <ul class="dated-list">
-          <li><time datetime="2026">2026</time><span>Received a SIAM Student Travel Award for MDS26.</span></li>
+          <li><time datetime="2026-11">Nov. 2026</time><span>Poster accepted for SIAM MDS26: <em>Learning Time Trajectories of a Stochastic Dynamical System with a Slowly Varying Parameter.</em></span></li>
+          <li><time datetime="2026-10-27">Oct. 2026</time><span>Presented <em>Comparing LSTM, GRU, Transformer, and Mamba for Statistics-Informed Neural Networks</em> at SIAM NCC26, UC Davis.</span></li>
+          <li><time datetime="2026-10">Oct. 2026</time><span>Completed <em>Cancer Genomics and Precision Oncology</em> through Harvard Medical School HMX.</span></li>
+          <li><time datetime="2026">Fall 2026</time><span>Received a SIAM Travel Award and a UC Merced Graduate Division Travel Fellowship.</span></li>
+          <li><time datetime="2026">2026</time><span><em>Learning and Generating Time Trajectories of Multidimensional Stochastic Processes</em> is under review.</span></li>
           <li><time datetime="2026">2026</time><span>Invited to present at the 2027 SIAM Conference on Computational Science and Engineering.</span></li>
-          <li><time datetime="2026">2026</time><span>Completed <em>Bioinformatics Fundamentals</em> and <em>Genomic Sequencing Technologies</em> through UC San Diego Extended Studies.</span></li>
-          <li><time datetime="2025-06">Summer 2025</time><span>Joined Lawrence Berkeley National Laboratory as a research intern in the Applied Mathematics and Computational Research Division.</span></li>
         </ul>
       </section>
 
@@ -68,33 +71,38 @@
         <div class="entry-list">
           <article>
             <h3>Statistics-informed neural networks for multidimensional stochastic processes</h3>
-            <p>Developing recurrent neural-network surrogates that learn and generate stochastic trajectories by matching marginal, cross-variable, temporal, and conditional statistics.</p>
-            <p class="note">First-author manuscript in advanced preparation; submission expected late September or early October 2026.</p>
+            <p>Developing recurrent neural-network surrogates trained through ensemble statistics. Incorporating marginal and cross-variable statistics extends SINN to multidimensional stochastic processes without requiring trajectory-wise correspondence.</p>
+            <p class="note">Graduate Student Researcher, UC Merced &middot; Fall 2022–present. First-author manuscript under review, 2026.</p>
           </article>
           <article>
             <h3>Stochastic dynamical systems with a slowly varying parameter</h3>
-            <p>Extending SINN through a branch–trunk architecture to reproduce distributions, time correlations, and parameter-conditioned statistics in quasi-stationary systems.</p>
-            <p class="note">MDS26 poster and CSE27 invited talk.</p>
+            <p>Extending SINN through a branch–trunk recurrent architecture that combines parameter and stochastic-input representations. Conditional-statistics objectives based on the mean, standard deviation, skewness, and kurtosis preserve non-Gaussian behavior across parameter regimes.</p>
+            <p class="note">Accepted MDS26 poster and invited CSE27 talk.</p>
           </article>
           <article>
             <h3>SINN architecture comparison</h3>
-            <p>Benchmarking neural-network architectures and numerical evaluation workflows for stochastic trajectory generation.</p>
-            <p class="note">NCC26 poster planned. Final title and public repository forthcoming.</p>
+            <p>Comparing LSTM, GRU, Transformer, and Mamba architectures for Statistics-Informed Neural Networks.</p>
+            <p class="note">Presented at SIAM NCC26, UC Davis, October 27, 2026.</p>
           </article>
           <article>
             <h3>Hybrid simulation at Lawrence Berkeley National Laboratory</h3>
-            <p>Embedded SINN as a neural surrogate for the fast stochastic component of a two-way coupled particle–continuum simulation and integrated generated trajectories into the multiscale workflow.</p>
+            <p>Embedded SINN as a neural surrogate for the fast stochastic component of a two-way coupled particle–continuum hybrid simulation. Worked on integrating generated stochastic trajectories into the multiscale workflow for computationally efficient simulation.</p>
+            <p class="note">Research Intern, Applied Mathematics and Computational Research Division &middot; Summer 2025.</p>
+          </article>
+          <article>
+            <h3>Collaborative research projects</h3>
+            <p>Contributed to DOE's <em>Machine-Learning-Based Surrogate Modeling for Stochastic Multiscale Simulation Methodology</em> (DE-SC0024240) and NSF's <em>LEAPS-MPS: Stochastic Particle-Continuum Hybrid Simulation Method for Model Heterogeneous Catalysts under Reaction Conditions</em> (CHE-2213368).</p>
           </article>
         </div>
       </section>
 
       <section aria-labelledby="publications-heading">
-        <h2 id="publications-heading">Manuscript</h2>
+        <h2 id="publications-heading">Manuscript Under Review</h2>
         <ol class="publication-list">
           <li>
             <strong>Learning and Generating Time Trajectories of Multidimensional Stochastic Processes.</strong><br>
-            <strong>Zihan Xu</strong>, <a href="https://sites.ucmerced.edu/ckim103/">Changho Kim</a>, <a href="https://profiles.lbl.gov/148958-yuanran-zhu">Yuanran Zhu</a>, Bhargav Siddani, and <a href="https://ccse.lbl.gov/people/nonaka/index.html">Andy J. Nonaka</a>.<br>
-            <span class="note">First-author manuscript in advanced preparation; submission expected late September or early October 2026.</span>
+            <strong>Zihan Xu</strong>, <a href="https://sites.ucmerced.edu/ckim103/">Changho Kim</a>, <a href="https://ccse.lbl.gov/people/nonaka/index.html">Andy J. Nonaka</a>, and <a href="https://profiles.lbl.gov/148958-yuanran-zhu">Yuanran Zhu</a>.<br>
+            <span class="note">Under review, 2026.</span>
           </li>
         </ol>
       </section>
@@ -102,10 +110,11 @@
       <section aria-labelledby="presentations-heading">
         <h2 id="presentations-heading">Selected Presentations</h2>
         <ul class="presentation-list">
-          <li><strong>SIAM CSE27</strong>, Pittsburgh, PA, Feb. 2027. Invited talk: <em>Learning Time Trajectories of a Stochastic Dynamical System with a Slowly Varying Parameter.</em></li>
-          <li><strong>SIAM MDS26</strong>, Salt Lake City, UT, Nov. 2026. Poster: <em>Learning Time Trajectories of a Stochastic Dynamical System with a Slowly Varying Parameter.</em></li>
-          <li><strong>SIAM NCC26</strong>, Davis, CA, Oct. 2026. Planned poster on the SINN architecture comparison study; final title forthcoming.</li>
-          <li><strong>SIAM CSE25</strong>, Fort Worth, TX, Mar. 2025. Oral presentation: <em>Learning Kinetic Monte Carlo Using Statistics-Informed Neural Network.</em></li>
+          <li><strong>SIAM CSE27</strong>, Pittsburgh, PA, Feb. 2027. Invited talk (upcoming): <em>Learning Time Trajectories of a Stochastic Dynamical System with a Slowly Varying Parameter.</em></li>
+          <li><strong>SIAM MDS26</strong>, Salt Lake City, UT, Nov. 2026. Accepted poster (upcoming): <em>Learning Time Trajectories of a Stochastic Dynamical System with a Slowly Varying Parameter.</em></li>
+          <li><strong>SIAM NCC26</strong>, UC Davis, Davis, CA, Oct. 27, 2026. Poster: <em>Comparing LSTM, GRU, Transformer, and Mamba for Statistics-Informed Neural Networks.</em></li>
+          <li><strong>SIAM NCC25</strong>, Lawrence Berkeley National Laboratory, Berkeley, CA, Oct. 2025. Poster: <em>Learning Kinetic Monte Carlo Using Statistics-Informed Neural Network.</em></li>
+          <li><strong>SIAM CSE25</strong>, Fort Worth, TX, Mar. 2025. Oral presentation in the invited minisymposium <em>Machine Learning with Applications in Chemical and Materials Sciences</em>: <em>Learning Kinetic Monte Carlo Using Statistics-Informed Neural Network.</em></li>
           <li><strong>SIAM MDS24</strong>, Atlanta, GA, Oct. 2024. Poster: <em>Extending Statistics-Informed Neural Network to Multidimensional Stochastic Processes.</em></li>
         </ul>
       </section>
@@ -115,25 +124,27 @@
         <div class="entry-list education-list">
           <article>
             <h3>University of California, Merced</h3>
-            <p>Ph.D. in Applied Mathematics, expected Spring 2027 &middot; GPA: 4.00/4.00</p>
+            <p>Ph.D. in Applied Mathematics &middot; Aug. 2021–expected May 2027 &middot; GPA: 4.00/4.00</p>
             <p class="note">Selected coursework: Scientific Computing and Deep Learning.</p>
           </article>
           <article>
             <h3>University of Southern California</h3>
-            <p>M.S. in Mathematical Finance</p>
+            <p>M.S. in Mathematical Finance &middot; Aug. 2017–May 2019 &middot; GPA: 3.87/4.00</p>
           </article>
           <article>
             <h3>Iowa State University</h3>
-            <p>B.S. in Applied Mathematics: Actuarial Science</p>
+            <p>B.S. in Applied Mathematics: Actuarial Science &middot; Aug. 2010–Dec. 2014 &middot; GPA: 3.73/4.00</p>
           </article>
           <article>
             <h3>Applied Bioinformatics, UC San Diego Extended Studies</h3>
-            <p>Certificate expected 2026. Completed: Bioinformatics Fundamentals (A+) and Genomic Sequencing Technologies (A).</p>
-            <p class="note">Processing Actionable Data in Genomics and Modern-Omics: Technologies and Applications scheduled for Sep. 28–Nov. 27, 2026.</p>
+            <p>Specialized Certificate in Applied Bioinformatics, expected 2026.</p>
+            <p>Completed: Bioinformatics Fundamentals (BIOL-40236; A) and Genomic Sequencing Technologies (BIOL-40237; A+).</p>
+            <p class="note">In progress: Processing Actionable Data in Genomics (BIOL-40327) and Modern-Omics: Technologies and Applications (BIOL-40374).</p>
           </article>
           <article>
             <h3>Harvard Medical School HMX</h3>
-            <p>Cancer Genomics and Precision Oncology, in progress.</p>
+            <p>Cancer Genomics and Precision Oncology: The Genetic Basis of Cancer and Its Treatment.</p>
+            <p class="note">Completed &middot; July–October 2026.</p>
           </article>
         </div>
       </section>
@@ -141,11 +152,14 @@
       <section aria-labelledby="honors-heading">
         <h2 id="honors-heading">Selected Honors &amp; Awards</h2>
         <ul class="dated-list">
-          <li><time datetime="2026">2026</time><span>SIAM MDS26 Student Travel Award</span></li>
-          <li><time datetime="2025">2025–26</time><span>UC Merced Graduate Division Travel Award</span></li>
-          <li><time datetime="2025">2025</time><span>AMAT Travel Award</span></li>
+          <li><time datetime="2026">Fall 2026</time><span>SIAM Travel Award &middot; Registration waiver and $650</span></li>
+          <li><time datetime="2026">Fall 2026</time><span>UC Merced Graduate Division Travel Fellowship &middot; $1,500</span></li>
+          <li><time datetime="2026">2026</time><span>NCC26 Conference Travel Award &middot; $100</span></li>
+          <li><time datetime="2025">2025</time><span>NCC25 Conference Travel Award &middot; $500</span></li>
           <li><time datetime="2024">2024</time><span>SIAM MDS24 Broader Engagement Program Fellowship</span></li>
           <li><time datetime="2024">2024</time><span>Best Poster Presentation, UC Merced Applied Mathematics Research Retreat</span></li>
+          <li><time datetime="2024">Summer 2024</time><span>UC Merced Graduate Division Travel Fellowship &middot; $1,500</span></li>
+          <li><time datetime="2023">Summer 2023</time><span>UC Merced Applied Mathematics Summer Research Fellowship &middot; $8,250</span></li>
         </ul>
       </section>
 
@@ -164,10 +178,37 @@
           </article>
         </div>
       </section>
+
+      <section aria-labelledby="pedagogy-heading">
+        <h2 id="pedagogy-heading">Pedagogical Training</h2>
+        <ul class="dated-list">
+          <li><time datetime="2024">Spring 2024</time><span>Advanced Pedagogy, UC Merced &middot; Certificate of Completion</span></li>
+          <li><time datetime="2023">Fall 2023</time><span>Principles of Pedagogy, UC Merced &middot; Certificate of Completion</span></li>
+          <li><time datetime="2021">Fall 2021</time><span>Teaching and Learning in the Sciences (MATH 201), UC Merced</span></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Technical Skills</h2>
+        <div class="entry-list education-list">
+          <article>
+            <h3>Programming</h3>
+            <p>Python, C++, MATLAB, Mathematica, R, SQL, and Linux shell scripting.</p>
+          </article>
+          <article>
+            <h3>Scientific computing &amp; machine learning</h3>
+            <p>PyTorch, NumPy, pandas, SciPy, scikit-learn, Matplotlib, Seaborn, MPI, numerical methods, and recurrent neural networks.</p>
+          </article>
+          <article>
+            <h3>Tools &amp; environments</h3>
+            <p>Git, Docker, Jupyter, VS Code, PyCharm, LaTeX, and UC Merced's Pinnacles HPC cluster.</p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <p>Last updated September 2026 &middot; <a href="#top">Back to top</a></p>
+      <p>Last updated November 2026 &middot; <a href="assets/Zihan_Xu_CV.pdf">Full CV (PDF)</a> &middot; <a href="#top">Back to top</a></p>
     </footer>
   </body>
 </html>
